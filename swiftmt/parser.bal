@@ -155,6 +155,8 @@ isolated function customizeGeneratedXml(xml customXml) returns xml|error {
             tagElement.setName("NdToNdTxRef");
         } else if (tagElement/<name>).data().equalsIgnoreCaseAscii("119") {
             tagElement.setName("ValidationFlag");
+        } else if (tagElement/<name>).data().equalsIgnoreCaseAscii("111") {
+            tagElement.setName("ServiceTypeIdentifier");
         }
     }
 
