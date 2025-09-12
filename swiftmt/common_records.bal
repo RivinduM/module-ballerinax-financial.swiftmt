@@ -49,9 +49,9 @@ public type ValidationFlag record {|
 # + ValidationFlag - The validation flag to identify STP, REMIT and COV
 # + ServiceTypeIdentifier - The service type identifier
 public type Block3 record {|
+    ServiceTypeIdentifier ServiceTypeIdentifier?;
     ValidationFlag ValidationFlag?;
     NdToNdTxRef NdToNdTxRef?;
-    ServiceTypeIdentifier ServiceTypeIdentifier?;
 |};
 
 # Defines the block 1 of the message.
